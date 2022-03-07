@@ -1,0 +1,21 @@
+.floating-button {
+  position: fixed;
+  right: -135px;
+  border-radius: 5px;
+  background-color: #3ab0d8;
+  padding: 10px 10px;
+  color: #fff;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+.floating-button .icon {
+  vertical-align: middle;
+}
+.floating-button .label {
+  margin-left: 10px;
+}
+.floating-button:hover {
+  right: -10px;
+  transition: 0.3s ease-in;
+}

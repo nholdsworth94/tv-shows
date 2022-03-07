@@ -1,0 +1,70 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 200px;
+  margin: 10px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.card-container:hover {
+  filter: opacity(0.5);
+}
+.card-container .image-cont {
+  width: 100%;
+  display: grid;
+}
+.card-container .image-cont img {
+  width: 100%;
+}
+.card-container .image-cont .no-image {
+  position: relative;
+  background-color: #fdfafa;
+}
+.card-container .image-cont .no-image:before {
+  display: block;
+  content: "";
+  width: 100%;
+  padding-top: 140%;
+}
+.card-container .image-cont .no-image > span {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+}
+.card-container .image-cont .no-image > span > span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+.card-container .details-cont {
+  background-color: #3ab0d8;
+  color: #fff;
+  padding: 10px;
+  height: 100%;
+}
+.card-container .details-cont .name {
+  text-align: center;
+}
+.card-container .details-cont .left,
+.card-container .details-cont .right {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.card-container .details-cont .fa {
+  cursor: pointer;
+}
+.card-container .rating {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ccc;
+  opacity: 0.8;
+}
